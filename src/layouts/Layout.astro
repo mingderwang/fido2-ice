@@ -1,0 +1,36 @@
+---
+import '../styles/style.css';
+const { title, pathname } = Astro.props
+---
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="global-wrapper">
+      <header class="global-header">
+        { pathname === "/"
+        ?
+          <h1 class="main-heading">
+          <a href="/">{title}</a>
+          </h1>
+        :
+          <h1 class="main-heading">
+          <a class="header-link-home" href="/">go Home</a>
+          </h1>
+        }
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer>
+        &#169; {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.astro.build">Astro</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "fido2-ice",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "dev": "astro dev",
@@ -13,10 +13,10 @@
   "dependencies": {
     "@astrojs/check": "^0.9.3",
     "@astrojs/react": "^3.6.2",
-    "@astrojs/vercel": "^7.8.0",
-    "@elysiajs/swagger": "^1.1.1",
-    "astro": "^4.15.1",
-    "elysia": "^1.1.11",
+    "@astrojs/vercel": "^8.1.1",
+    "@elysiajs/swagger": "^1.2.2",
+    "astro": "^5.4.2",
+    "elysia": "^1.2.24",
     "typescript": "^5.5.4"
   }
 }
